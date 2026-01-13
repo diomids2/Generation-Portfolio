@@ -1,113 +1,147 @@
+
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Projeto Portfólio">
-    <meta name="author" content="Generation Brasil">
-    <meta name="keywords" content="HTML, CSS, JavaScript">
-    <link rel="icon" type="image/svg+xml" href="./assets/img/favicon.svg" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Contato - Claudiomir Neves" />
+  <meta name="author" content="Claudiomir Neves" />
 
-    <!-- Link para a Folha de Estilo da Página - CSS -->
-	<link rel="stylesheet" href="./assets/css/styles.css" />
+  <!-- Favicons (opcionais) -->
+  <link rel="icon" href="./assets/img/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" href="./assets/img/favicon-16.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/img/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./assets/img/favicon-16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="./assets/img/favicon-180.png">
+    <link rel="manifest" href="./assets/img/manifest.json">
 
-    <title>Contato</title>
+  <!-- CSS principal -->
+      <link rel="stylesheet" href="./assets/css/style.css" />
+  <title>Contato · Claudiomir Neves</title>
 </head>
-
 <body>
-
-    <!-- Cabeçalho da Página (header) -->
-    <header>
-
-        <!-- Título do cabeçalho -->
-        <h1>Generation Brasil</h1>
-
-        <!-- Menu de Navegação -->
+  <!-- Header sticky com blur -->
+  <header>
+    <div class="inner container" role="navigation" aria-label="Menu principal">
+      <h1>Claudiomir Neves</h1>
+      <nav>
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="contato.html">Contato</a></li>
             </ul>
         </nav>
+      </nav>
+    </div>
+  </header>
 
-    </header>
+  <!-- MAIN em grid: formulário + localização -->
+  <main class="main_contato">
+    <!-- CARD: Formulário -->   
+            <form id="formulario" action="#" method="post">
+    <section id="about">
 
-    <!-- Seção Principal da Página (main) -->
-    <main>
+                <label for="name">Nome</label>
+                <input type="text" id="name" name="name" placeholder="Digite seu nome" />
+                <span id="errNome"></span>
 
-        <!-- Seção do Formulário -->
-        <form action="#" method="submit" id="formulario">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Digite seu email" />
+                <span id="errEmail"></span>
 
-            <label for="nome">Nome: </label>
-            <input id="name" type="text" name="name" placeholder="Digite seu nome" />
-            <span id="errNome"></span>
+                <label for="subject">Assunto</label>
+                <input type="text" id="subject" name="subject" placeholder="Digite o assunto" />
+                <span id="errSubject"></span>
 
-            <label for="email">Email: </label>
-            <input id="email" type="text" name="email" placeholder="Digite seu email" />
-            <span id="errEmail"></span>
+                <label for="message">Mensagem</label>
+                <textarea id="message" name="message" placeholder="Digite sua mensagem"></textarea>
 
-            <label for="subject">Assunto: </label>
-            <input id="subject" type="text" name="subject" placeholder="Digite o assunto da mensagem" />
-            <span id="errSubject"></span>
+                <button type="submit">Enviar</button>
+            </form>
+    </section>
 
-            <label for="message">Mensagem: </label>
-            <textarea id="message" name="message" placeholder="Digite sua mensagem"></textarea>
-
-            <button type="submit">Enviar</button>
-
-        </form>
-
-        <!-- Seção do Google Maps -->
-        <article>
+    <!-- CARD: Localização -->
+        <section class="card article_mapa">
+            <h2>Localização</h2>
 
             <address>
-                <p>Av. Paulista, 100</p>
                 <p>São Paulo - SP</p>
+                <p>Brasil</p>
             </address>
 
-            <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.106696296001!2d-46.65390548535577!3d-23.564611167596592!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce59c7f481fd9f%3A0x9982bfde4df54830!2sAv.%20Paulista%2C%201000%20-%20Bela%20Vista%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2001310-100!5e0!3m2!1spt-BR!2sbr!4v1594056507065!5m2!1spt-BR!2sbr"
-                width="400"
-                height="250"
-                frameborder="0"
-                style="border: 0"
-                allowfullscreen
-                aria-hidden="false"
-                tabindex="0"
-            ></iframe>
-
-        </article>
-
-
-    </main>
-
-    <!-- Rodapé da Página (footer) -->
-    <footer>
-
-        <!-- Seção de Contato - Redes Sociais-->
-        <section>
-
-            <a href="">
-                <img src="assets/img/linkedin.svg" alt="LinkedIn" />
-            </a>
-
-            <a href="">
-                <img src="assets/img/github.svg" alt="Github" />
-            </a>
-
-            <a href="">
-                <img src="assets/img/instagram.svg" alt="Instagram" />
-            </a>
-
+            <div class="mapa">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.106696296001!2d-46.65390548535577!3d-23.564611167596592!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce59c7f481fd9f%3A0x9982bfde4df54830!2sAv.%20Paulista%2C%201000%20-%20Bela%20Vista%2C%20S%C3%A3o%20Paulo%20-%20SP!5e0!3m2!1spt-BR!2sbr!4v1594056507065!5m2!1spt-BR!2sbr"
+                    loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
+            </div>
         </section>
 
-        <h3>
-            Feito com 🧡 por Generation Brasil - 2025
-        </h3>
+  <!-- FOOTER -->
+  <footer>
+    <div class="container">
+        <section>
+            <a href="https://www.linkedin.com/in/Claudiomir-Neves/" target="_blank" rel="noopener">
+                <img src="./assets/img/linkedin.svg" alt="LinkedIn" />
+            </a>
 
-    </footer>
+            <a href="https://github.com/ClaudiomirNeves" target="_blank" rel="noopener">
+                <img src="./assets/img/github.svg" alt="GitHub" />
+            </a>
 
+            <a href="https://www.instagram.com/" target="_blank" rel="noopener">
+                <img src="./assets/img/instagram.svg" alt="Instagram" />
+            </a>
+        </section>
+
+      <h3>Feito com 🖤 por Claudiomir Neves - 2026</h3>
+    </div>
+  </footer>
+
+  <!-- Script opcional: validação simples no front -->
+  <script>
+    // Validação leve (somente para feedback visual, não substitui validação de backend)
+    document.getElementById('form-contato')?.addEventListener('submit', function (e) {
+      e.preventDefault();
+
+      const name = document.getElementById('name');
+      const email = document.getElementById('email');
+      const subject = document.getElementById('subject');
+      const message = document.getElementById('message');
+
+      const errNome = document.getElementById('errNome');
+      const errEmail = document.getElementById('errEmail');
+      const errSubject = document.getElementById('errSubject');
+      const errMessage = document.getElementById('errMessage');
+
+      let ok = true;
+
+      // Reset
+      [errNome, errEmail, errSubject, errMessage].forEach(el => el.textContent = '');
+
+      if (!name.value.trim()) {
+        errNome.textContent = 'Por favor, informe seu nome.';
+        ok = false;
+      }
+      if (!email.value.trim() || !/^[^@\\s]+@[^@\\s]+\\.[^@\\s]+$/.test(email.value)) {
+        errEmail.textContent = 'E-mail inválido.';
+        ok = false;
+      }
+      if (!subject.value.trim()) {
+        errSubject.textContent = 'Informe um assunto.';
+        ok = false;
+      }
+      if (!message.value.trim() || message.value.trim().length < 10) {
+        errMessage.textContent = 'Escreva pelo menos 10 caracteres.';
+        ok = false;
+      }
+
+      if (ok) {
+        // Aqui você pode integrar com seu backend, Formspree, EmailJS etc.
+        alert('Mensagem enviada! Obrigado pelo contato, Claudiomir. 🚀');
+        e.target.reset();
+      }
+    });
+  </script>
 </body>
-
 </html>
+>>>>>>> ebd5c27 (updates)

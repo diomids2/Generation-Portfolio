@@ -1,109 +1,124 @@
+
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Projeto Portfólio">
-    <meta name="author" content="Generation Brasil">
-    <meta name="keywords" content="HTML, CSS, JavaScript">
-    <link rel="icon" type="image/svg+xml" href="./assets/img/favicon.svg" />
-    <title>Meu Perfil</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Portfólio de Claudiomir Neves" />
+  <meta name="author" content="Claudiomir Neves" />
+  <meta name="keywords" content="HTML, CSS, Wordpress, JavaScript, TypeScript, Portfólio, Full Stack, React, Node" />
+
+  <!-- Favicons (opcionais, mantenha seus arquivos em assets/img) -->
+  <link rel="icon" type="image/x-icon" href="./assets/img/favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/img/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./assets/img/favicon-16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="./assets/img/favicon-180.png">
+  <link rel="manifest" href="./assets/img/manifest.json">
+  <!-- (Opcional) Google Fonts: descomente para usar Inter -->
+  <!--
+  https://fonts.gstatic.com
+  https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap
+  -->
+
+  <!-- CSS principal -->
+      <link rel="stylesheet" href="./assets/css/style.css "/>
+  <title>Claudiomir Neves - Portfólio</title>
 </head>
-
 <body>
-
-    <!-- Cabeçalho da Página (header) -->
-    <header>
-
-        <!-- Título do cabeçalho -->
-        <h1>Generation Brasil</h1>
-
-        <!-- Menu de Navegação -->
+  <!-- Header sticky com blur -->
+  <header>
+    <div class="inner container" role="navigation" aria-label="Menu principal">
+      <h1>Claudiomir Neves</h1>
+      <nav>
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="contato.html">Contato</a></li>
             </ul>
         </nav>
+      </nav>
+    </div>
+  </header>
 
-    </header>
+  <!-- Conteúdo principal -->
+  <main>
+    <!-- SOBRE -->
+    <section id="about">
+      <div class="section-inner container">
+        <h2 class="section-title">Sobre mim</h2>
+        <article class="about-container">
+          <img src="./assets/img/claudiomir.jpg" alt="Foto de Claudiomir Neves">
+          <div class="about-text">
+            <p>
+              Olá! Eu sou <strong>Claudiomir Neves</strong>, tenho 26 anos, e sou apaixonado por desenvolver soluções através da programação! 💜
+              Sou técnico em desenvolvimento de sistemas formado pelo SENAI Informática 💻, e estou em constante evolução, sempre em busca do próximo nível! 🚀
+              📍 São Paulo, SP - Brasil
+            </p>
+            <p>
+              Atualmente, participo do <strong>Bootcamp Full Stack JavaScript da Generation Brasil</strong>,
+              onde desenvolvo projetos práticos em equipe, aplicando lógica de programação,
+              manipulação da DOM e boas práticas de desenvolvimento.
+            </p>
+            <p>
+              Sou uma pessoa curiosa, organizada e em constante evolução,
+              buscando minha primeira oportunidade profissional em tecnologia,
+              em ambientes colaborativos onde eu possa aprender,
+              contribuir e crescer como desenvolvedor.
+            </p>
+          </div>
+        </article>
+      </div>
+    </section>
 
-    <!-- Seção Principal da Página (main) -->
-    <main>
+    <!-- TECNOLOGIAS -->
+    <section id="tech">
+      <div class="section-inner container">
+        <h2 class="section-title">Tecnologias que estou aprendendo</h2>
+        <ul class="tech-list" aria-label="Lista de tecnologias">
+          <li>HTML5</li>
+          <li>CSS3</li>
+          <li>Wordpress</li>
+          <li>Elementor</li>
+          <li>Typescript</li>
+          <li>JavaScript</li>
+          <li>Git e GitHub</li>
+          <li>React</li>
+          <li>Node.js</li>
+          <li>MySQL</li>
+        </ul>
+      </div>
+    </section>
 
-        <!-- Seção Sobre -->
-        <section id="about">
+    <!-- VÍDEO -->
+    <section id="video">
+      <div class="section-inner container">
+        <h2 class="section-title">Meu vídeo favorito</h2>
+        <figure class="video-box">
+                          <iframe src="https://www.youtube.com/embed/Z3_mtwMMuGI?si=F1QiiDYSfsPG3nF0" 
+            ></iframe>
+        </figure>
+      </div>
+    </section>
+  </main>
 
-            <!-- Título da Seção -->
-            <h2>Sobre a Generation Brasil</h2>
-
-            <article>
-
-                <!-- Foto do Perfil -->
-                <img src="./assets/img/eudiomi.png" alt="Foto do criador desse conteúdo" />
-
-                <!-- Texto do Perfil -->
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem odio possimus, dolorem
-                    earum atque itaque quas soluta placeat iure omnis porro cum debitis sequi libero! Deleniti
-                    vitae quis hic cumque. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius
-                    inventore ullam, quia deserunt enim cumque hic officia repudiandae ad ab et sapiente qui
-                    vitae accusamus adipisci provident sit assumenda laboriosam!
-                </p>
-                
-            </article>
-
-        </section>
-        
-        <!-- Seção vídeo -->
-        <section id="video">
-
-            <!-- Título da Seção -->
-			<h2>Meu vídeo favorito:</h2>
-
-            <!-- Vídeo da Seção -->
-            <figure>
-                <iframe
-                    width="560"
-                    height="315"
-                    src="https://www.youtube.com/embed/Z3_mtwMMuGI?si=F1QiiDYSfsPG3nF0"
-                    frameborder="0"
-                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen
-                ></iframe>
-            </figure>
-
-        </section>
-
-    </main>
-
-    <!-- Rodapé da Página (footer) -->
+  <!-- Footer -->
     <footer>
-
-        <!-- Seção de Contato - Redes Sociais-->
         <section>
-
-            <a href="">
-                <img src="assets/img/linkedin.svg" alt="LinkedIn" />
+            <a href="https://www.linkedin.com/in/Claudiomir-Neves/" target="_blank" rel="noopener">
+                <img src="./assets/img/linkedin.svg" alt="LinkedIn" />
             </a>
 
-            <a href="">
-                <img src="assets/img/github.svg" alt="Github" />
+            <a href="https://github.com/ClaudiomirNeves" target="_blank" rel="noopener">
+                <img src="./assets/img/github.svg" alt="GitHub" />
             </a>
 
-            <a href="">
-                <img src="assets/img/instagram.svg" alt="Instagram" />
+            <a href="https://www.instagram.com/" target="_blank" rel="noopener">
+                <img src="./assets/img/instagram.svg" alt="Instagram" />
             </a>
-
         </section>
-
-		<h3>
-			Feito com 🧡 por Claudiomir Neves - 2026
-		</h3>
-
-    </footer>
-
+      </section>
+      <h3>Feito com 🖤 por Claudiomir Neves - 2026</h3>
+    </div>
+  </footer>
 </body>
-
 </html>
