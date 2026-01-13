@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Projeto Portfólio Pessoal
 
 <div align="center"> 
@@ -46,10 +45,6 @@ Este site está disponível publicamente através do **GitHub Pages**. Você pod
 
 - [Portfólio Pessoal](:)
 
-## Contribuindo
-
-Contribuições são bem-vindas! Se você tiver sugestões ou melhorias, sinta-se à vontade para abrir um **pull request**.
-=======
 # Projeto Portfólio Pessoal
 
 Este é o repositório do meu site portfólio, desenvolvido durante
@@ -86,3 +81,4 @@ além de página de contato com formulário e mapa.
 Claudiomir Neves
 LinkedIn | GitHub
 >>>>>>> ebd5c27 (updates)
+
